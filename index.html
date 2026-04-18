@@ -30,7 +30,8 @@
             --text-muted: #f8f9fa;
             --primary-color: #0d6efd;
             --whatsapp-color: #25d366;
-            --gradient-accent: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+            --instagram-color: #e4405f;
+            --facebook-color: #1877f2;
         }
 
         body {
@@ -106,6 +107,9 @@
             padding: 1.1rem !important;
             border-radius: 16px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
         }
 
         .btn-custom:hover {
@@ -117,6 +121,16 @@
 
         .btn-whatsapp {
             background: linear-gradient(90deg, #25d366, #128c7e);
+            border: none;
+        }
+
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            border: none;
+        }
+
+        .btn-facebook {
+            background: var(--facebook-color);
             border: none;
         }
 
@@ -175,11 +189,11 @@
         <header class="mb-5">
             <img src="img/profile.png" alt="Samuel Chavero" class="profile-img rounded-circle mx-auto d-block">
             <h1 class="display-6 fw-bold mb-2">Samuel Chavero</h1>
-            <p class="h6 mb-4 text-primary opacity-75 fw-normal">Desarrollador Web & Especialista en Crecimiento</p>
+            <p class="h6 mb-4 text-white opacity-100 fw-normal">Desarrollador Web & Especialista en Crecimiento Digital</p>
             <p class="description px-2">Ayudo a empresas a vender más y optimizar sus procesos mediante desarrollo web y automatización digital.</p>
         </header>
 
-        <!-- 2. Botones de Acción Principal -->
+        <!-- 2. Botones de Acción Principal y Sociales -->
         <section class="mb-4">
             <a href="samuelchavero.vcf" download class="btn btn-primary-custom btn-lg w-100 btn-custom shadow">
                 <span class="icon-box"><i class="fas fa-id-card"></i></span> Guardar Contacto
@@ -187,13 +201,19 @@
             <a href="https://wa.me/18328901102" target="_blank" class="btn btn-whatsapp btn-lg w-100 btn-custom shadow">
                 <span class="icon-box"><i class="fab fa-whatsapp"></i></span> Enviar WhatsApp
             </a>
-        </section>
-
-        <!-- 3. Redes Sociales -->
-        <section class="mb-4">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/samu.chavero/" target="_blank" class="btn btn-instagram btn-lg w-100 btn-custom shadow">
+                <span class="icon-box"><i class="fab fa-instagram"></i></span> Instagram
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61588301643585" target="_blank" class="btn btn-facebook btn-lg w-100 btn-custom shadow">
+                <span class="icon-box"><i class="fab fa-facebook-f"></i></span> Facebook
+            </a>
+            <!-- LinkedIn -->
             <a href="https://www.linkedin.com/in/samuel-chavero-4b1188151/" target="_blank" class="btn btn-custom w-100">
                 <span class="icon-box text-info"><i class="fab fa-linkedin-in"></i></span> Mi Perfil en LinkedIn
             </a>
+            <!-- Email -->
             <a href="mailto:samuechavero@gmail.com" class="btn btn-custom w-100">
                 <span class="icon-box text-danger"><i class="fas fa-envelope"></i></span> Enviar Correo
             </a>
